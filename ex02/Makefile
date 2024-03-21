@@ -5,13 +5,13 @@
 #                                                     +:+ +:+         +:+      #
 #    By: agan <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/03/18 14:12:06 by agan              #+#    #+#              #
-#    Updated: 2024/03/18 14:12:07 by agan             ###   ########.fr        #
+#    Created: 2024/03/18 19:55:27 by agan              #+#    #+#              #
+#    Updated: 2024/03/18 19:55:29 by agan             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= zombie
-SRCS	= main.cpp Zombie.cpp zombieHorde.cpp
+NAME	= brain
+SRCS	= main.cpp
 OBJS 	= ${SRCS:.cpp=.o}
 CC		= g++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98

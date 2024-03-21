@@ -31,7 +31,7 @@ END = \033[0m
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
+	@$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 clean:
 	@rm -fr $(OBJS)
@@ -43,7 +43,7 @@ fclean: clean
 re: fclean all
 
 .cpp.o:
-	@${CC} ${FLAGS} -c $< -o ${<:.cpp=.o}
+	@${CC} ${CFLAGS} -c $< -o ${<:.cpp=.o}
 	@echo "$(B_GREEN)$< compiled.$(END)"
 
 .PHONY: all clean fclean re
